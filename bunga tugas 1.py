@@ -1,7 +1,7 @@
 panjang = float(input('masukkan panjang balok: '))
 lebar = float(input('masukkan lebar balok: '))
 tinggi =float(input('masukkan tinggi balok: '))
-sisi_kubus = float(input('masukkan sisi_kubus: '))
+sisi_kubus = float(input('masukkan sisi kubus: '))
 
 volume_balok = panjang*lebar*tinggi
 luas_permukaan_balok = 2*(panjang*lebar+panjang*tinggi+lebar*tinggi)
