@@ -2,7 +2,7 @@ print("""
     --------------------------------------------
     List Harga Menu Paket Makanan
     A. Paket_A : Rp 25.000
-    B. Paket_B : Rp 35.000
+    B. Paket_B : Rp 30.000
     C. Paket_C: Rp 45.000
     --------------------------------------------
     """)
@@ -21,7 +21,7 @@ if pesan == "a":
     else :  
         ongkir = 20000  
         total_harga = harga + ongkir
-if pesan == "b":
+elif pesan == "b":
     harga = 30000  
     if jarak < 500:
         ongkir = 0  
@@ -32,7 +32,7 @@ if pesan == "b":
     else :  
         ongkir = 20000  
         total_harga = harga + ongkir
-if pesan == "c":
+elif pesan == "c":
     harga = 45000  
     if jarak < 500:
         ongkir = 0  
@@ -43,5 +43,12 @@ if pesan == "c":
     else :  
         ongkir = 20000  
         total_harga = harga + ongkir
-        
+
+print("----------------------------------------------")
+print("Menu : Paket ", pesan)
+print("Jarak : ", jarak)
+print("Harga paket makanan adalah: ", harga)
+print("Biaya ongkos kirim adalah: ", ongkir)
+print("-----------------------------------------------")
 print("Jadi total yang harus anda bayar adalah ", total_harga)
+print("-----------------------------------------------")
