@@ -28,7 +28,6 @@ while lanjut == "y":
         
     jumlah = int(input("Berapa pcs cream puff yang ingin Anda beli? "))
 
-    
     if pesan == "a":
         varian = "Vanilla"
         harga = 5000
@@ -88,4 +87,4 @@ while lanjut == "y":
         elif lanjut == 'y':
             break
         else:
-            print("Pilihan anda tidak sesuai. Silakan masukkan Y untuk memesan cream puff kembali atau N untuk batal pesan kembali")
+            print("Pilihan anda tidak sesuai. Silakan masukkan Y untuk memesan cream puff kembali atau N untuk keluar")
