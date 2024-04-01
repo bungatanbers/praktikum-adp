@@ -82,6 +82,6 @@ while lanjut == "y":
         elif lanjut == 'y':
             break
         else:
-            print("Pilihan anda tidak valid. Silakan masukkan Y untuk memesan kembali atau N untuk keluar")
+            print("Pilihan anda tidak sesuai. Silakan masukkan Y untuk memesan cream puff kembali atau N untuk batal pesan kembali")
 
 
