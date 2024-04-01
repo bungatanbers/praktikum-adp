@@ -20,11 +20,11 @@ while lanjut == "y":
     
     """)
     
-    pesan = input("Halo cream puff lovers, Anda mau pesan varian apa (A/B/C)? ").lower()
+    pesan = str(input("Halo cream puff lovers, Anda mau pesan varian apa (A/B/C)? ")).lower()
 
     while pesan not in ['a', 'b', 'c']:
         print("Maaf varian yang Anda inginkan tidak tersedia. Silakan pilih kembali.\n")
-        pesan = input("Anda mau pesan varian apa (A/B/C)? ").lower()
+        pesan = str(input("Anda mau pesan varian apa (A/B/C)? ")).lower()
         
     jumlah = int(input("Berapa pcs cream puff yang ingin Anda beli? "))
 
@@ -36,7 +36,7 @@ while lanjut == "y":
             diskon = 0
             total_harga = (harga*jumlah) - diskon
         else:
-            diskon = (harga*jumlah) * 0.20
+            diskon = (harga*jumlah) * 0.2
             total_harga = (harga*jumlah) - diskon
     elif pesan == "b":
         varian = "Cokelat"
@@ -54,7 +54,7 @@ while lanjut == "y":
             diskon = 0
             total_harga = (harga*jumlah) - diskon
         else:
-            diskon = (harga*jumlah) * 0.30
+            diskon = (harga*jumlah) * 0.3
             total_harga = (harga*jumlah) - diskon
     
     if total_harga >= 200000:
@@ -65,23 +65,27 @@ while lanjut == "y":
         total_belanja = total_harga - tambahan_diskon
     
     print("----------------------------------------------------------------------")
-    print("Cream Puff rasa : ", varian)
-    print("Jumlah : ", jumlah)
-    print("Harga/pcs : ", harga)
-    print("Diskon :", diskon)
-    print("Total harga :", total_harga)
-    print("Tambahan diskon :", tambahan_diskon)
-    print("Total belanja yang harus anda bayar adalah ", total_belanja)
+    print("Cream Puff rasa                            :", varian)
+    print("Jumlah                                     :", jumlah)
+    print("Harga/pcs                                  :", harga)
+    print("----------------------------------------------------------------------")
+    print("Total                                      :", harga*jumlah) 
+    print("Diskon                                     :", diskon)
+    print("---------------------------------------------------------------------- -")
+    print("Total harga                                :", total_harga)
+    print("Tambahan diskon                            :", tambahan_diskon)
+    print("---------------------------------------------------------------------- +")
+    print("Total belanja yang harus anda bayar adalah :", total_belanja)
     print("----------------------------------------------------------------------")
 
 
     while True:
         lanjut = input("Apakah Anda ingin memesan kembali? (Y/N): ").lower()
         if lanjut == 'n':
+            print("Terima kasih sudah membeli cream puff di CPG!! Selamat menikmati cream puff lovers!!")
+            print("------------------------------------------------------------------------------------")
             break
         elif lanjut == 'y':
             break
         else:
             print("Pilihan anda tidak sesuai. Silakan masukkan Y untuk memesan cream puff kembali atau N untuk batal pesan kembali")
-
-
