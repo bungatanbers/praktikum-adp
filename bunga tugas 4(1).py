@@ -88,11 +88,11 @@ while lanjut == "y":
 
     while True:
         lanjut = input("Apakah Anda ingin memesan kembali? (Y/N): ").lower()
-        if lanjut == 'n':
+        if lanjut == "n" :
             print("Terima kasih sudah membeli cream puff di CPG!! Selamat menikmati cream puff lovers!!")
             print("------------------------------------------------------------------------------------")
             break
-        elif lanjut == 'y':
+        elif lanjut == "y":
             break
         else:
             print("Pilihan anda tidak sesuai. Silakan masukkan Y untuk memesan cream puff kembali atau N untuk keluar")
