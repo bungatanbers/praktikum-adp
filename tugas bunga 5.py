@@ -10,7 +10,5 @@ for x in nilai_x:
         nilai_fx.append (10)
 
 print("| {:<4} | {:<20} |".format("x", "f(x)"))
-for i in range(len(nilai_x)):
-    x = nilai_x[i]
-    fx = nilai_fx[i]
-    print("| {:<4} | {:<20} |".format(x,fx))
+for x, fx in zip(nilai_x, nilai_fx):  
+    print("| {:<4} | {:<20} |".format(x, fx))
