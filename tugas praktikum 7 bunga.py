@@ -7,7 +7,7 @@ def input_data():
             break
     data = []
     for i in range(1, n + 1):
-        nilai = float(input(f"Masukkan data ke-{i}: "))
+        nilai = int(input(f"Masukkan data ke-{i}: "))
         data.append(nilai)
     return data
 
