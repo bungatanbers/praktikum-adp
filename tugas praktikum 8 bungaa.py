@@ -1,10 +1,8 @@
-# Fungsi untuk menambahkan data film ke file
 def tambah_film(judul, nama_penulis_skenario, nama_sutradara, tahun_rilis):
     with open("database_film.txt", "a") as file:
         file.write(f"{judul},{nama_penulis_skenario},{nama_sutradara},{tahun_rilis}\n")
     print("Data film berhasil ditambahkan.")
 
-# Fungsi untuk menghapus data film dari file
 def hapus_film(judul):
     with open("database_film.txt", "r") as file:
         lines = file.readlines()
@@ -15,7 +13,6 @@ def hapus_film(judul):
                 file.write(line)
     print("Data film berhasil dihapus.")
 
-# Fungsi untuk menampilkan seluruh data film dari file
 def tampilkan_data_film():
     with open("database_film.txt", "r") as file:
         data_film = file.readlines()
@@ -31,7 +28,6 @@ def tampilkan_data_film():
     else:
         print("Database film kosong.")
 
-# Main program
 while True:
     print("-----------------------------------")
     print("|    KUMPULAN DATA FILM BUNGA     |")
