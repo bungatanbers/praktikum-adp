@@ -37,18 +37,18 @@ while True:
     print("| 2. Hapus Data Film              |")
     print("| 3. Tampilkan Semua Data Film    |")
     print("-----------------------------------\n")
-    pilihan = input("Pilih menu (1/2/3): ")
+    pilihan = int(input("Pilih menu (1/2/3): "))
 
-    if pilihan == "1":
-        judul = input("Masukkan judul film: ")
-        nama_penulis_skenario = input("Masukkan nama penulis skenario film: ")
-        nama_sutradara = input("Masukkan nama sutradara film: ")
-        tahun_rilis = input("Masukkan tahun rilis film: ")
+    if pilihan == 1 :
+        judul = str(input("Masukkan judul film: "))
+        nama_penulis_skenario = str(input("Masukkan nama penulis skenario film: "))
+        nama_sutradara = str(input("Masukkan nama sutradara film: "))
+        tahun_rilis = int(input("Masukkan tahun rilis film: "))
         tambah_film(judul, nama_penulis_skenario, nama_sutradara, tahun_rilis)
-    elif pilihan == "2":
+    elif pilihan == 2 :
         judul = input("Masukkan judul film yang akan dihapus: ")
         hapus_film(judul)
-    elif pilihan == "3":
+    elif pilihan == 3 :
         tampilkan_data_film()
     else:
         print("!!!ERROR!!!Pilihan tidak valid. Silakan pilih menu yang tersedia.")
