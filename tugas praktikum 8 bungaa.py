@@ -46,7 +46,7 @@ while True:
         tahun_rilis = int(input("Masukkan tahun rilis film: "))
         tambah_film(judul, nama_penulis_skenario, nama_sutradara, tahun_rilis)
     elif pilihan == 2 :
-        judul = input("Masukkan judul film yang akan dihapus: ")
+        judul = str(input("Masukkan judul film yang akan dihapus: "))
         hapus_film(judul)
     elif pilihan == 3 :
         tampilkan_data_film()
