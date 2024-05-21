@@ -1,12 +1,12 @@
 def tambah_film(judul, nama_penulis_skenario, nama_sutradara, tahun_rilis):
-    with open("database_film.txt", "a") as file:
+    with open("film_bunga.txt", "a") as file:
         file.write(f"{judul},{nama_penulis_skenario},{nama_sutradara},{tahun_rilis}\n")
     print("Data film berhasil ditambahkan.")
 
 def hapus_film(judul):
-    with open("database_film.txt", "r") as file:
+    with open("film_bunga.txt", "r") as file:
         lines = file.readlines()
-    with open("database_film.txt", "w") as file:
+    with open("film_bunga.txt", "w") as file:
         for line in lines:
             data = line.strip().split(',')
             if data[0] != judul:
@@ -14,7 +14,7 @@ def hapus_film(judul):
     print("Data film berhasil dihapus.")
 
 def tampilkan_data_film():
-    with open("database_film.txt", "r") as file:
+    with open("film_bunga.txt", "r") as file:
         data_film = file.readlines()
 
     if data_film:
